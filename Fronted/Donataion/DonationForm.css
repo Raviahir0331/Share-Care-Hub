@@ -1,0 +1,109 @@
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 100%; }
+}
+.modal.show {
+    display: block;
+  }
+  
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://media.istockphoto.com/id/1477731413/photo/volunteers-hands-stacking-in-a-circle.jpg?b=1&s=612x612&w=0&k=20&c=3GX9wu8yjjsRSkgEmbGgfO_u27QfpuzEoAaUrLqNwOY=");
+    background-size: 100% 100% ;
+    animation: backgroundAnimation 15s ease infinite;
+}
+
+.enhanced-donation-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.enhanced-donation-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ff7e5f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.enhanced-donation-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.enhanced-donation-form label input,
+.enhanced-donation-form label textarea,
+.enhanced-donation-form label select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group label {
+    margin-right: 10px;
+    flex-grow: 1;
+    text-align: center;
+    background: #ff7e5f;
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.radio-group input {
+    display: none;
+}
+
+.radio-group input:checked + label {
+    background: #feb47b;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label input {
+    margin-right: 10px;
+}
+
+.enhanced-donation-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.enhanced-donation-form button:hover {
+    background-color: #feb47b;
+}
+
+@media (max-width: 600px) {
+    .radio-group {
+        flex-direction: column;
+    }
+}
